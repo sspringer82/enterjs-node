@@ -1,5 +1,28 @@
-<form action="/todo/form" method="POST">
-  <label for="name">Name:</label>
-  <input type="text" name="name" id="name">
+<!DOCTYPE html>
+<html lang="en">
 
-</form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="/todo/save" method="post">
+    <div>
+      <label for="title">Titel:</label>
+      <input type="text" name="title" id="title">
+    </div>
+    <div>
+      <label for="title">Status:</label>
+      <select name="status" id="status">
+        <option value="open" selected>offen</option>
+        <option value="done">erledigt</option>
+      </select>
+    </div>
+    <button type="submit">speichern</button>
+  </form>
+</body>
+
+</html>

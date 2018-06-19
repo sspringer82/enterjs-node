@@ -21,11 +21,14 @@
     <tbody>
       <% tasks.forEach(task => { %>
         <tr>
-          <td></td>
           <td>
-            <%= task %>
+            <%= task.id %>
           </td>
           <td>
+            <%= task.title %>
+          </td>
+          <td>
+            <%= task.status === 'open' ? '✔' : '✘' %>
           </td>
           <td>
           </td>
@@ -33,6 +36,7 @@
         <% }) %>
     </tbody>
   </table>
+  <a href="/todo/form">neu</a>
 </body>
 
 </html>
