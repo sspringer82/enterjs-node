@@ -1,5 +1,6 @@
 const { createServer } = require('spdy');
 const fs = require('fs');
+const { ensureLoggedIn } = require('connect-ensure-login');
 
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -16,7 +17,7 @@ app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 
-app.use('/todo', todoRouter);
+app.use('/todo', ensureLoggedIn('/login.html'), todoRouter);
 
 const options = {
   key: fs.readFileSync('./localhost.key'),
