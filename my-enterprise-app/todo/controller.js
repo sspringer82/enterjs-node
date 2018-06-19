@@ -2,6 +2,14 @@ const { getList, save } = require('./model');
 const render = require('./view');
 
 async function listAction(req, res) {
+  /*
+  Alternative mit promise statt await
+  
+  const tasks = await getList();
+  getList().then(list => {
+    res.render(__dirname + '/views/list.ejs', { tasks });
+  });*/
+
   res.render(__dirname + '/views/list.ejs', { tasks: await getList() });
 }
 
