@@ -6,6 +6,8 @@ const app = express();
 
 logger(app);
 
+app.use(express.static('public'));
+
 app.set('view engine', 'ejs');
 
 app.use('/todo', todoRouter);
