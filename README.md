@@ -5,6 +5,7 @@
 - Airbnb style guide: https://github.com/airbnb/javascript
 - Eslint: https://eslint.org/
 - Prettier: https://github.com/prettier/prettier
+- Nodemon: https://nodemon.io/
 
 # Debugger
 
