@@ -8,6 +8,8 @@
 - Nodemon: https://nodemon.io/
 - Winston logger: https://github.com/winstonjs/winston
 - Morgan: https://github.com/expressjs/morgan
+- Pug (template engine): https://pugjs.org/api/getting-started.html
+- Handlebars (template engine): https://handlebarsjs.com/
 
 # Debugger
 
@@ -21,3 +23,7 @@ Anleitung für:
 
 - Webstorm: https://www.jetbrains.com/help/webstorm/running-and-debugging-node-js.html
 - VSCode: https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+
+# Template engine
+
+npm install ejs

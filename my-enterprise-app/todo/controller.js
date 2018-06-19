@@ -2,9 +2,11 @@ const { getList } = require('./model');
 const render = require('./view');
 
 async function listAction(req, res) {
-  const list = await getList();
+  res.render(__dirname + '/views/index.ejs', { name: 'Klaus' });
 
-  res.send(render(list));
+  /*const list = await getList();
+
+  res.send(render(list));*/
 }
 
 module.exports = {

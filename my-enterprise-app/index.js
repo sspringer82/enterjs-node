@@ -6,6 +6,8 @@ const app = express();
 
 logger(app);
 
+app.set('view engine', 'ejs');
+
 app.use('/todo', todoRouter);
 
 app.listen(8080, () => console.log('server is listening'));
