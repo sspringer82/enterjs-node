@@ -6,6 +6,8 @@
 - Eslint: https://eslint.org/
 - Prettier: https://github.com/prettier/prettier
 - Nodemon: https://nodemon.io/
+- Winston logger: https://github.com/winstonjs/winston
+- Morgan: https://github.com/expressjs/morgan
 
 # Debugger
 
