@@ -1,3 +1,6 @@
+const { createServer } = require('spdy');
+const fs = require('fs');
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const todoRouter = require('./todo');
@@ -15,4 +18,10 @@ app.set('view engine', 'ejs');
 
 app.use('/todo', todoRouter);
 
-app.listen(8080, () => console.log('server is listening'));
+const options = {
+  key: fs.readFileSync('./localhost.key'),
+  cert: fs.readFileSync('./localhost.cert'),
+};
+createServer(options, app).listen(8080, () =>
+  console.log('server is listening'),
+);

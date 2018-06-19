@@ -10,6 +10,8 @@
 - Morgan: https://github.com/expressjs/morgan
 - Pug (template engine): https://pugjs.org/api/getting-started.html
 - Handlebars (template engine): https://handlebarsjs.com/
+- Caniuse: https://caniuse.com/#search=http2
+- node.green: https://node.green/
 
 # Debugger
 
@@ -27,3 +29,9 @@ Anleitung für:
 # Template engine
 
 npm install ejs
+
+# Zertifikate
+
+````openssl genrsa -out localhost.key 2048
+```openssl req -new -x509 -key localhost.key -out localhost.cert -days 9999 -subj /CN=localhost
+````
