@@ -10,6 +10,7 @@ const router = Router();
 router.use(middleware);
 router.get('/', listAction);
 router.get('/form', formAction);
+router.get('/form/:id', formAction);
 router.post('/save', saveAction);
 
 module.exports = router;

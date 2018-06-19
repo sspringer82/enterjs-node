@@ -6,6 +6,7 @@ async function listAction(req, res) {
 }
 
 function formAction(req, res) {
+  console.log(req.params.id);
   res.render(__dirname + '/views/form.ejs');
 }
 
