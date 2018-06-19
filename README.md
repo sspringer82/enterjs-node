@@ -1,0 +1,5 @@
+- node version manager: https://github.com/creationix/nvm (geht auch unter windows)
+- node version manager für windows: https://github.com/marcelklehr/nodist
+- Airbnb style guide: https://github.com/airbnb/javascript
+- Eslint: https://eslint.org/
+- Prettier: https://github.com/prettier/prettier
