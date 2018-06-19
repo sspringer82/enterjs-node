@@ -1,3 +1,20 @@
 h1 {
-  color: lime;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+}
+
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: rgb(70, 70, 70);
+  color: white;
+}
+
+tr:nth-child(odd) td {
+  background-color: lightgray;
+  border-bottom: 1px solid darkgrey;
 }
